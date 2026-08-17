@@ -90,6 +90,14 @@ flowchart TD
 
 ---
 
+### Thesis Architecture Figure
+
+![ACES-FL Architecture](docs/architecture/figure-3-2-aces-fl-architecture.png)
+
+*Figure 3.2 — Architecture of the Proposed ACES-FL Framework.*
+
+---
+
 ## Experimental Setup
 
 | Component | Configuration |
@@ -144,6 +152,14 @@ with ReLU activations and 0.20 dropout.
 
 ACES-FL reduced client-to-server model/update tensor traffic from **50.88 MiB to 17.62 MiB**, a **65.38% communication reduction**, while preserving model utility.
 
+![Total Client-to-Server Communication Cost](results/figures/figure-4-4-communication-cost.png)
+
+*Figure 4.4 — Total Client-to-Server Communication Cost.*
+
+![Communication Reduction Relative to FedAvg](results/figures/figure-4-5-communication-reduction.png)
+
+*Figure 4.5 — Communication Reduction Relative to FedAvg.*
+
 ---
 
 ## Security Evaluation
@@ -174,6 +190,14 @@ Defense V2 restored:
 - **99.00% decision accuracy**
 
 The defense recovered approximately **99.35% of the accuracy lost** under the principal poisoning attack.
+
+![Model Accuracy Under Poisoning and Defense](results/figures/figure-4-6-poisoning-defense-accuracy.png)
+
+*Figure 4.6 — Model Accuracy Under Poisoning and Defense.*
+
+![Security Ablation](results/figures/figure-4-16-security-ablation.png)
+
+*Figure 4.16 — Security Ablation: Clean, Attacked and Defended ACES-FL.*
 
 ---
 
